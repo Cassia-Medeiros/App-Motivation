@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_all"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/imageHappy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_happy"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageMoring"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_sun"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:text="Hello World!" />
+
+
+    <TextView
+        android:id="@+id/textPharse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="32dp"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:text="Frase" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/textPharse"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/buttonNewPharse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova Frase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ripple_button"
+        android:textColor="@color/white"
+        android:padding="16dp"/>
+
+</RelativeLayout>
